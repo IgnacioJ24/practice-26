@@ -1,3 +1,38 @@
 <script>
-    var name = "ignacio";
+    var myMovies = ["Titanic", "StarWars", "ToyStory", "BugsLife"];
+    console.log(myMovies)
+
+    function addMovie(array) {
+        var count = 0;
+        for (i = 0; i < myMovies.length; i++) {
+            if (array[i] === "Interstellar") {
+                count++
+            };
+        }
+        if (count === 0) {
+            array.push("D2")
+        }
+        return array;
+    }
+
+    console.log(addMovie(myMovies));
+</script>
+
+<script>
+    var myList = ["Books", "games", "soccer"];
+    console.log(myList);
+
+    function changeList(arr) {
+        starter = 0;
+        for (i = 0; i < arr.length; i++) {
+            if (arr[i] === "Basketball") {
+                starter++
+            };
+        }
+        if (starter === 0) {
+            arr.push("Basketball");
+        }
+        return arr;
+    };
+    console.log(changeList(myList));
 </script>
