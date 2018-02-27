@@ -36,3 +36,22 @@
     };
     console.log(changeList(myList));
 </script>
+
+<script>
+    var myTeams = ["Jazz", "CFC", "RSL"];
+    console.log(myTeams);
+
+    function addTeam(arry) {
+        var count = 0;
+        for (i = 0; i < arry.lenght; i++) {
+            for (arry[i] === "Chile") {
+                count++
+            };
+            if (count === "chile") {
+                arry.push("chile");
+            }
+        }
+        return arry;
+    }
+    console.log(addTeam(myTeams))
+</script>
