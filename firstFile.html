@@ -43,15 +43,97 @@
 
     function addTeam(arry) {
         var count = 0;
-        for (i = 0; i < arry.lenght; i++) {
-            for (arry[i] === "Chile") {
+        for (i = 0; i < arry.length; i++) {
+            if (arry[i] === "chile") {
                 count++
             };
-            if (count === "chile") {
-                arry.push("chile");
-            }
+        }
+        if (count === 0) {
+            arry.push("chile")
         }
         return arry;
     }
-    console.log(addTeam(myTeams))
+    console.log(addTeam(myTeams));
+</script>
+<script>
+    //*** 7 steps to success
+
+
+    //write a function that takes in one number.  we will console.log every number up to the nmber passed in.  but if the number is divisible by 3 we wiull log fizz instead.  if is divisible by 5 we will llg buzz instead.
+    // Step 1: Clarify - Understand the question
+
+
+
+    // Step 2: What data structures are needed
+    //* number
+    //strings for the log;
+
+
+    // Step 3: Create sample data
+    //1
+    //2
+    //20
+    //2049
+
+
+
+    // Step 4: Solve Sample Data
+    // 1,2,fizz, 4, buzz, fizz, 7,8,fizz, buzz 11
+
+    // Step 5: Function Signature
+    //function  fizzbuzz (num:integer) -> undefined
+
+    // Step 6: List code constructs
+    // for loop
+    // if else
+    6 % 3 === 0; //true
+    7 % 3 === 0; //false
+
+    // Step 7: Pseudo Code
+    // create the function
+    // for loop upto the number passed in
+    // if divisible by 3 then fizz.
+    // else if divisibile by 5 then buzz.
+    // else if divisible by 5 and 3 fizzbuzz
+
+
+
+
+    // Step 8: Solve
+
+    function toy(num) {
+        for (i = 0; i < num; i++) { // start at 0, then <= num
+            if (num[i] % 3 === 0) { // should be i, and should start at %3 and %5, more // specific first
+                console.log("buzz")
+            } else if (num[i] % 5 === 0) {
+                console.log("fizz")
+            } else if (num[i] % 3 === 0 && num[i] % 5 === 0) {
+                console.log("fizz_buzz")
+            }
+
+        }
+        return num;
+
+
+    };
+
+
+
+    //solution
+
+    function fizzbuzz(num) {
+        for (let i = 1; i <= num; i++) { // i<=num, could also be put in true
+            if (i % 3 === 0 && i % 5 === 0) {
+                console.log("fizz_buzz")
+            } else if (i % 3 === 0) {
+                console.log("fizz")
+            } else if (i % 5 === 0) {
+                console.log("buzz")
+            } else {
+                console.log(i)
+            }
+        }
+
+    }
+    fizzbuzz(20)
 </script>
